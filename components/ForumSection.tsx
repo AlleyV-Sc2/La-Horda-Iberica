@@ -268,7 +268,7 @@ const ForumSection: React.FC<Props> = ({ currentUser }) => {
                 <p className="text-stone-500 text-sm mt-1">{cat.description}</p>
                 <div className="flex gap-4 mt-4">
                   <span className="text-[10px] font-bold text-stone-700 uppercase">{threads.filter(t => t.categoryId === cat.id).length} Hilos</span>
-                  <span className="text-[10px] font-bold text-red-900 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity font-mono">Entrar >>></span>
+                  <span className="text-[10px] font-bold text-red-900 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity font-mono">Entrar {" >>> "}</span>
                 </div>
               </div>
             </button>
