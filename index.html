@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horde Guild Manager - WoW TBC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wow-gold: #f0ad4e;
+            --wow-silver: #a0a0a0;
+            --horde-red: #8b0000;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a09; 
+            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png'), radial-gradient(circle at center, #1a0505 0%, #0c0a09 100%);
+            color: #fca5a5;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .horde-font {
+            font-family: 'MedievalSharp', cursive;
+        }
+        .wow-ui-bg {
+            background: #111;
+            border: 2px solid #333;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.9);
+        }
+        .wow-button {
+            background: linear-gradient(to bottom, #4a0a0a, #1a0505);
+            border: 1px solid #7a633a;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        .wow-button:hover {
+            border-color: #f0ad4e;
+            box-shadow: 0 0 12px rgba(240, 173, 78, 0.5);
+            filter: brightness(1.2);
+        }
+        .metallic-border {
+            border: 2px solid #222;
+            border-image: linear-gradient(to bottom, #444, #111) 1;
+            box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 0 10px rgba(139, 0, 0, 0.2);
+        }
+        .guild-banner-glow {
+            filter: drop-shadow(0 0 20px rgba(139, 0, 0, 0.7));
+        }
+        .item-icon-border {
+            border: 1px solid #555;
+            box-shadow: 0 0 4px rgba(0,0,0,0.8);
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c0a09;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #7f1d1d, #2b0505);
+            border: 2px solid #0c0a09;
+            border-radius: 4px;
+        }
+        @keyframes subtle-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.02); opacity: 1; }
+        }
+        .animate-subtle-pulse {
+            animation: subtle-pulse 3s infinite ease-in-out;
+        }
+        /* Fix for Vite loading */
+        #root {
+            min-height: 100vh;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

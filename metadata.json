@@ -1,0 +1,8 @@
+{
+  "name": "Horde Guild Manager TBC",
+  "description": "Una aplicación integral para gestionar hermandades de WoW TBC con temática de la Horda, incluyendo gestión de miembros, sistema DKP (CLM), calendario de eventos e integración visual de Discord.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
